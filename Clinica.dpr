@@ -2,7 +2,7 @@ program Clinica;
 
 uses
   Vcl.Forms,
-  unitPrincipal in '..\sistema\unitPrincipal.pas' {Form1};
+  unitPriincipal in 'unitPriincipal.pas' {Form1};
 
 {$R *.res}
 

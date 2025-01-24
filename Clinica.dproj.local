@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2025/01/24 17:23:54.000.996,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/01/24 17:25:50.227,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/01/24 17:26:33.196,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\sistema\unitPrincipal.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2025/01/24 17:26:33.196,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\sistema\unitPrincipal.dfm=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2025/01/24 17:29:03.304,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\clinica_medica\Clinica.dproj=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2025/01/24 17:46:15.682,=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/01/24 17:46:37.106,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\clinica_medica\unitPriincipal.pas=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/01/24 17:46:37.106,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\clinica_medica\unitPriincipal.dfm=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/01/24 17:46:43.724,C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\clinica_medica\Clinica.dproj=C:\Users\danie\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>
