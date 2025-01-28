@@ -14,3 +14,7 @@ FORM data module
 
 COMANDO DE BUSCA TXT
 	  DM.tbPacientes.Locate('nome', txtBusca.Text, [loPartialkey])
+
+
+
+aula 14 33 minutos

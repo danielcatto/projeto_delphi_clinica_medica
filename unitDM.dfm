@@ -14,6 +14,7 @@ object DM: TDM
   end
   object tbPacientes: TFDTable
     Active = True
+    AfterInsert = tbPacientesAfterInsert
     IndexFieldNames = 'id'
     Connection = conexao
     ResourceOptions.AssignedValues = [rvEscapeExpand]
@@ -35,6 +36,7 @@ object DM: TDM
       FieldName = 'celular'
       Origin = 'celular'
       Required = True
+      EditMask = '(##)#####-####'
       Size = 16
     end
     object tbPacientesdata_cadastro: TDateField
@@ -46,6 +48,7 @@ object DM: TDM
       FieldName = 'cpf'
       Origin = 'cpf'
       Required = True
+      EditMask = '###.###.###-##;1;_'
       Size = 14
     end
   end

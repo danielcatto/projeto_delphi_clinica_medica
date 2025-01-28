@@ -122,6 +122,7 @@ object formCadPacientes: TformCadPacientes
     Height = 23
     DataField = 'cpf'
     DataSource = DM.dsPaciente
+    MaxLength = 14
     TabOrder = 3
   end
   object DBEdit3: TDBEdit
@@ -140,6 +141,7 @@ object formCadPacientes: TformCadPacientes
     Height = 23
     DataField = 'celular'
     DataSource = DM.dsPaciente
+    MaxLength = 14
     TabOrder = 5
   end
   object DBEdit5: TDBEdit
@@ -154,7 +156,7 @@ object formCadPacientes: TformCadPacientes
   object txtBusca: TEdit
     Left = 376
     Top = 144
-    Width = 121
+    Width = 108
     Height = 23
     TabOrder = 7
     OnChange = txtBuscaChange

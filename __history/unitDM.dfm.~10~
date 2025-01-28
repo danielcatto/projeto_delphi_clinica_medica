@@ -46,7 +46,6 @@ object DM: TDM
       FieldName = 'cpf'
       Origin = 'cpf'
       Required = True
-      EditMask = '###.###.###-##;1;_'
       Size = 14
     end
   end

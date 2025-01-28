@@ -22,6 +22,7 @@ type
     tbPacientescelular: TStringField;
     tbPacientesdata_cadastro: TDateField;
     tbPacientescpf: TStringField;
+    procedure tbPacientesAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -36,5 +37,10 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TDM.tbPacientesAfterInsert(DataSet: TDataSet);
+begin
+  tbPacientesdata_cadastro.Value := Date();
+end;
 
 end.
