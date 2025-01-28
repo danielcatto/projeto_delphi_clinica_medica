@@ -1,0 +1,16 @@
+propriedades:
+	
+FORM data module
+	necessario 
+		FireDAC > FDConection
+		  FDTable agendamento para cada tabela
+		  FDTable paciente
+		    
+			
+		DATA ACESS > TData Source para cada tabela
+
+
+
+
+COMANDO DE BUSCA TXT
+	  DM.tbPacientes.Locate('nome', txtBusca.Text, [loPartialkey])

@@ -1,7 +1,7 @@
-object Form1: TForm1
+object formPrincipal: TformPrincipal
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Sistema Clinica Family Medical'
   ClientHeight = 582
   ClientWidth = 858
   Color = clWhite
@@ -740,7 +740,7 @@ object Form1: TForm1
     ExplicitWidth = 105
     ExplicitHeight = 105
   end
-  object Panel2: TPanel
+  object painel_main: TPanel
     Left = 0
     Top = 0
     Width = 858
@@ -749,6 +749,7 @@ object Form1: TForm1
     Color = clSilver
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 854
     object BitBtn2: TBitBtn
       Left = 121
       Top = 1
@@ -977,8 +978,7 @@ object Form1: TForm1
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
       TabOrder = 0
-      ExplicitLeft = 1
-      ExplicitHeight = 104
+      OnClick = BitBtn2Click
     end
     object BitBtn1: TBitBtn
       Left = 1
@@ -1208,25 +1208,30 @@ object Form1: TForm1
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       Layout = blGlyphTop
       TabOrder = 1
-      ExplicitHeight = 104
+      OnClick = BitBtn1Click
+      ExplicitLeft = -5
+      ExplicitTop = -4
     end
   end
   object MainMenu1: TMainMenu
     Left = 448
     Top = 320
     object g1: TMenuItem
-      Caption = 'Sistem'
+      Caption = 'Sistema'
       object Sair1: TMenuItem
         Caption = 'Sair'
+        OnClick = Sair1Click
       end
     end
     object Cadastros1: TMenuItem
       Caption = 'Cadastros'
       object Pacientes1: TMenuItem
         Caption = 'Pacientes'
+        OnClick = Pacientes1Click
       end
       object Agendamentos1: TMenuItem
         Caption = 'Agendamentos'
+        OnClick = Agendamentos1Click
       end
     end
   end

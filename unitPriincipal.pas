@@ -8,17 +8,22 @@ uses
   Vcl.Menus, Vcl.Imaging.jpeg;
 
 type
-  TForm1 = class(TForm)
+  TformPrincipal = class(TForm)
     MainMenu1: TMainMenu;
     g1: TMenuItem;
     Sair1: TMenuItem;
     Cadastros1: TMenuItem;
     Pacientes1: TMenuItem;
     Agendamentos1: TMenuItem;
-    Panel2: TPanel;
+    painel_main: TPanel;
     BitBtn2: TBitBtn;
     BitBtn1: TBitBtn;
     Image1: TImage;
+    procedure Sair1Click(Sender: TObject);
+    procedure Pacientes1Click(Sender: TObject);
+    procedure Agendamentos1Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,10 +31,37 @@ type
   end;
 
 var
-  Form1: TForm1;
+  formPrincipal: TformPrincipal;
 
 implementation
 
 {$R *.dfm}
+
+uses unitCadPaciente, unitCadAgendamento;
+
+procedure TformPrincipal.Agendamentos1Click(Sender: TObject);
+begin
+  formCadAgendamentos.showModal;
+end;
+
+procedure TformPrincipal.BitBtn1Click(Sender: TObject);
+begin
+  formCadPacientes.ShowModal;
+end;
+
+procedure TformPrincipal.BitBtn2Click(Sender: TObject);
+begin
+  formCadAgendamentos.showModal;
+end;
+
+procedure TformPrincipal.Pacientes1Click(Sender: TObject);
+begin
+  formCadPacientes.ShowModal;
+end;
+
+procedure TformPrincipal.Sair1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
 
 end.
