@@ -1,0 +1,6 @@
+﻿[dsAgendamento]
+LayerNames=nome
+
+[Module Settings]
+ModelLayerNames=nome
+

@@ -4,7 +4,7 @@ object formCadPacientes: TformCadPacientes
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Cadastro de Pacientes'
-  ClientHeight = 480
+  ClientHeight = 462
   ClientWidth = 728
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -30,21 +30,21 @@ object formCadPacientes: TformCadPacientes
   end
   object Label4: TLabel
     Left = 32
-    Top = 203
+    Top = 187
     Width = 89
     Height = 15
     Caption = 'Nome Completo'
   end
   object Label5: TLabel
     Left = 32
-    Top = 267
+    Top = 243
     Width = 37
     Height = 15
     Caption = 'Celular'
   end
   object Label6: TLabel
     Left = 203
-    Top = 267
+    Top = 243
     Width = 74
     Height = 15
     Caption = 'Data Cadastro'
@@ -62,8 +62,8 @@ object formCadPacientes: TformCadPacientes
     Width = 728
     Height = 105
     Align = alTop
-    TabOrder = 0
-    ExplicitWidth = 700
+    TabOrder = 6
+    ExplicitWidth = 724
     object Label1: TLabel
       Left = 16
       Top = 35
@@ -79,20 +79,20 @@ object formCadPacientes: TformCadPacientes
     end
     object DBNavigator1: TDBNavigator
       Left = 344
-      Top = 50
-      Width = 320
-      Height = 25
+      Top = 18
+      Width = 310
+      Height = 70
       DataSource = DM.dsPaciente
       TabOrder = 0
     end
   end
-  object pacientes_cadastrado: TDBGrid
+  object grid: TDBGrid
     Left = 368
-    Top = 203
+    Top = 184
     Width = 330
-    Height = 246
+    Height = 265
     DataSource = DM.dsPaciente
-    TabOrder = 1
+    TabOrder = 7
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -12
@@ -106,16 +106,16 @@ object formCadPacientes: TformCadPacientes
         Visible = True
       end>
   end
-  object DBEdit1: TDBEdit
+  object txtID: TDBEdit
     Left = 32
     Top = 144
     Width = 121
     Height = 23
     DataField = 'id'
     DataSource = DM.dsPaciente
-    TabOrder = 2
+    TabOrder = 0
   end
-  object DBEdit2: TDBEdit
+  object txtCPF: TDBEdit
     Left = 203
     Top = 144
     Width = 159
@@ -123,42 +123,43 @@ object formCadPacientes: TformCadPacientes
     DataField = 'cpf'
     DataSource = DM.dsPaciente
     MaxLength = 14
-    TabOrder = 3
+    TabOrder = 1
   end
-  object DBEdit3: TDBEdit
+  object txtNome: TDBEdit
     Left = 32
-    Top = 216
+    Top = 200
     Width = 330
     Height = 23
     DataField = 'nome'
     DataSource = DM.dsPaciente
-    TabOrder = 4
+    TabOrder = 2
   end
-  object DBEdit4: TDBEdit
+  object txtCelular: TDBEdit
     Left = 32
-    Top = 288
+    Top = 264
     Width = 121
     Height = 23
     DataField = 'celular'
     DataSource = DM.dsPaciente
     MaxLength = 14
-    TabOrder = 5
+    TabOrder = 3
   end
-  object DBEdit5: TDBEdit
+  object txtDataCadastro: TDBEdit
     Left = 203
-    Top = 288
+    Top = 264
     Width = 159
     Height = 23
     DataField = 'data_cadastro'
     DataSource = DM.dsPaciente
-    TabOrder = 6
+    ReadOnly = True
+    TabOrder = 4
   end
   object txtBusca: TEdit
     Left = 376
     Top = 144
     Width = 108
     Height = 23
-    TabOrder = 7
+    TabOrder = 5
     OnChange = txtBuscaChange
   end
 end
